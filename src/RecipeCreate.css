@@ -1,4 +1,8 @@
-.row {
-    display: inline;
-    background-color: brown;
+form {
+    background-color: #ffeb89;
+    padding: 20px 0px;
+}
+
+.yellow {
+    background-color: #ffeb89;
 }

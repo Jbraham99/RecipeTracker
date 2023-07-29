@@ -1,5 +1,5 @@
-import React from "react";
-
+import React, { useState } from "react";
+import "./RecipeCreate.css"
 function RecipeList({data=[], setRecipes, recipes}) {
   console.log(data, "recipeListData****")
   // TODO: Display the list of recipes using the structure of table that is provided.
@@ -26,7 +26,7 @@ function RecipeList({data=[], setRecipes, recipes}) {
         <tbody>
         {data.map((recipe, index)=>{
             return (
-                <tr>
+                <tr style={{backgroundColor: index % 2 === 0 ? "#ffeb89" : "#f0fff"}}>
                     <td>{recipe.name}</td>
                     <td>{recipe.cuisine}</td>
                     <td><img src={recipe.photo} height="150px"/></td>
