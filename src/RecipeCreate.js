@@ -12,9 +12,7 @@ function RecipeCreate({setRecipes, recipes}) {
     const submitHandler = (e) =>{
         e.preventDefault();
         setRecipes([...recipes, recipe])
-        // console.log("Submitted: ",recipe);
         setRecipe(initFormState)
-        // console.log("recipe after submit: ", recipe)
     }
     
     const changeHandler = (e) => {
